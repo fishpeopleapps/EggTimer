@@ -12,7 +12,7 @@ struct EggTimerApp: App {
     @StateObject var audioManager = AudioManager()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SplashView()
                 .environmentObject(audioManager)
 
         }

@@ -4,6 +4,8 @@
 //
 //  Created by KBrewer on 6/5/23.
 //
+// TODO: Move the timer logic out of here to clean it up
+// TODO: Joggle uses a timer that might be useful
 
 import SwiftUI
 
@@ -14,17 +16,19 @@ struct EggCookingView: View {
     @State private var secondsPassed = 0.0
     var choice: String
     var totalTime: Double
-    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
-
+    let timer = Timer
+        .publish(every: 1, on: .main, in: .common)
+        .autoconnect()
+/// Holds the view
     var body: some View {
         ZStack {
             LinearGradient(gradient: Gradient(colors: [.orange, .yellow]), startPoint: .top, endPoint: .bottom)
                 .ignoresSafeArea()
             VStack {
                 Spacer()
-                Image(choice)
-                Text(formatTime(eggTime: timeRemaining))
-                    .font(.title2)
+                Image("\(choice)Egg")
+                Text("Time Remaining: \(formatTime(eggTime: timeRemaining))")
+                    .eggText(20)
                 ProgressView(value: progress())
                     .padding()
                     .foregroundColor(.black)
@@ -49,7 +53,6 @@ struct EggCookingView: View {
         if timeRemaining > 1 {
             timeRemaining -= 1
             secondsPassed += 1
-            print(timeRemaining)
         } else if timeRemaining == 1 {
             audioManager.startPlayer(successSound: "successTrumpet")
             audioManager.player?.play()
@@ -61,5 +64,12 @@ struct EggCookingView: View {
     /// - Returns: How much time has passed as the timer counts down
     func progress() -> Float {
         Float(secondsPassed / totalTime)
+    }
+    func update(_ newTime: Date) {
+        if timeRemaining > 0 {
+            timeRemaining += 1
+        } else {
+            print("there's something happening here")
+        }
     }
 }
