@@ -4,25 +4,26 @@
 //
 //  Created by KBrewer on 5/30/23.
 //
-
+// TODO: Error: ProgressView initialized with an out-of-bounds progress value. The value will be clamped to the range of `0...total`.
 import AVKit
 import SwiftUI
 
 struct ContentView: View {
-    @EnvironmentObject var audioManager: AudioManager
+    @Environment(AudioManager.self) var audioManager
     /// Keys are the egg image names, Values are the egg timer times
     let eggs = ["soft": 5, "medium": 14, "hard": 200]
+    @State private var isShowingSettings = false
     var body: some View {
         NavigationStack {
             ZStack {
-                /// Background gradient
-                LinearGradient(gradient: Gradient(colors: [.orange, .yellow]), startPoint: .top, endPoint: .bottom)
+                Color.backgroundGradient
                     .ignoresSafeArea()
                 VStack {
                     Spacer()
                     Text("How would you like your eggs cooked?")
                         .eggText(30)
                         .multilineTextAlignment(.center)
+                        .padding(.horizontal, 10)
                     HStack {
                         /// This is the formatting used to utilize both the KEY and VALUE in a for each loop
                         /// When a button is pressed, it navigates to a new screen that displays the timer
@@ -37,6 +38,19 @@ struct ContentView: View {
                     }
                     .padding()
                     Spacer()
+                }
+            }
+            .sheet(isPresented: $isShowingSettings) {
+                SettingsView(audioManager: AudioManager())
+                    .presentationDetents([.medium])
+            }
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button {
+                        isShowingSettings.toggle()
+                    } label: {
+                        Label("Settings", systemImage: "gearshape")
+                    }
                 }
             }
         }

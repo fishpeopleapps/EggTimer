@@ -9,11 +9,11 @@ import SwiftUI
 
 @main
 struct EggTimerApp: App {
-    @StateObject var audioManager = AudioManager()
+    @State private var audioManager = AudioManager()
     var body: some Scene {
         WindowGroup {
             SplashView()
-                .environmentObject(audioManager)
+                .environment(audioManager)
 
         }
     }

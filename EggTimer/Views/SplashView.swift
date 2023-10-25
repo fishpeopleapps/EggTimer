@@ -4,6 +4,8 @@
 //
 //  Created by Kimberly Brewer on 7/28/23.
 //
+// TODO: Can you add a hopping egg animation? It should start on the right, then bounce its way
+// off screen to the left
 
 import SwiftUI
 
@@ -14,7 +16,7 @@ struct SplashView: View {
             if showingContentView {
                 ContentView()
             } else {
-                LinearGradient(gradient: Gradient(colors: [.yellow, .orange]), startPoint: .top, endPoint: .bottom)
+                Color.backgroundGradient
                     .ignoresSafeArea()
                 Text("EggTimer")
                     .eggText(38)

@@ -6,17 +6,26 @@
 //
 // The audio file was found online from an free commercial music source
 
+// TODO: Save user choice into documents directory so it persists
+
 import AVKit
-import Foundation
+import SwiftUI
 
 /// An environment singleton responsible for loading an audio file and preparing it for playback
-class AudioManager: ObservableObject {
+@Observable
+class AudioManager {
+    let audioChoices = ["Trumpet", "Corporate", "Jingle"]
+    var selectedAudio = "Trumpet"
+
+
+
+    
     var player: AVAudioPlayer?
     /// Loads the audio file passed in, if successful initializes the audio player for playback
     /// - Parameter successSound: Success audio that plays when the timer is complete
     func startPlayer(successSound: String) {
         guard let url = Bundle.main.url(forResource: successSound, withExtension: "mp3") else {
-            print("Resource note found")
+            print("Resource not found")
             return
         }
         do {

@@ -11,13 +11,18 @@
 		8140D0462A26B728008268FB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8140D0452A26B728008268FB /* ContentView.swift */; };
 		8140D0482A26B729008268FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8140D0472A26B729008268FB /* Assets.xcassets */; };
 		8140D04B2A26B729008268FB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8140D04A2A26B729008268FB /* Preview Assets.xcassets */; };
-		8140D0542A2BB2CE008268FB /* successTrumpet.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8140D0532A2BB2CE008268FB /* successTrumpet.mp3 */; };
+		8140D0542A2BB2CE008268FB /* Trumpet.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8140D0532A2BB2CE008268FB /* Trumpet.mp3 */; };
 		8140D0562A2BB2E9008268FB /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8140D0552A2BB2E9008268FB /* AudioManager.swift */; };
 		81554DCB2A746C7100D75B23 /* ReggaeOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 81554DCA2A746C7100D75B23 /* ReggaeOne-Regular.ttf */; };
 		81554DD22A746E1D00D75B23 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81554DD12A746E1D00D75B23 /* SplashView.swift */; };
 		81554DD52A748DEA00D75B23 /* EggView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81554DD42A748DEA00D75B23 /* EggView.swift */; };
 		81554DD72A748F6A00D75B23 /* CustomFont-Modifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81554DD62A748F6A00D75B23 /* CustomFont-Modifier.swift */; };
 		81FE64FA2A2E4F8A00FF54F6 /* EggCookingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FE64F92A2E4F8A00FF54F6 /* EggCookingView.swift */; };
+		DF9F6FE02AE9A4F100E5B60D /* TimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9F6FDF2AE9A4F100E5B60D /* TimeManager.swift */; };
+		DF9F6FE22AE9AB7D00E5B60D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9F6FE12AE9AB7D00E5B60D /* SettingsView.swift */; };
+		DF9F6FE42AE9ABF600E5B60D /* Backgrounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9F6FE32AE9ABF600E5B60D /* Backgrounds.swift */; };
+		DF9F6FF12AE9BE3200E5B60D /* Jingle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DF9F6FEF2AE9BE3200E5B60D /* Jingle.mp3 */; };
+		DF9F6FF22AE9BE3200E5B60D /* Corporate.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DF9F6FF02AE9BE3200E5B60D /* Corporate.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +31,7 @@
 		8140D0452A26B728008268FB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8140D0472A26B729008268FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8140D04A2A26B729008268FB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		8140D0532A2BB2CE008268FB /* successTrumpet.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = successTrumpet.mp3; sourceTree = "<group>"; };
+		8140D0532A2BB2CE008268FB /* Trumpet.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Trumpet.mp3; sourceTree = "<group>"; };
 		8140D0552A2BB2E9008268FB /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
 		81554DCA2A746C7100D75B23 /* ReggaeOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ReggaeOne-Regular.ttf"; sourceTree = "<group>"; };
 		81554DD02A746CF600D75B23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -34,6 +39,11 @@
 		81554DD42A748DEA00D75B23 /* EggView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggView.swift; sourceTree = "<group>"; };
 		81554DD62A748F6A00D75B23 /* CustomFont-Modifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomFont-Modifier.swift"; sourceTree = "<group>"; };
 		81FE64F92A2E4F8A00FF54F6 /* EggCookingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggCookingView.swift; sourceTree = "<group>"; };
+		DF9F6FDF2AE9A4F100E5B60D /* TimeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeManager.swift; sourceTree = "<group>"; };
+		DF9F6FE12AE9AB7D00E5B60D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		DF9F6FE32AE9ABF600E5B60D /* Backgrounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Backgrounds.swift; sourceTree = "<group>"; };
+		DF9F6FEF2AE9BE3200E5B60D /* Jingle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Jingle.mp3; sourceTree = "<group>"; };
+		DF9F6FF02AE9BE3200E5B60D /* Corporate.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Corporate.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +99,9 @@
 		81554DCC2A746C7600D75B23 /* Fonts and Audio */ = {
 			isa = PBXGroup;
 			children = (
-				8140D0532A2BB2CE008268FB /* successTrumpet.mp3 */,
+				8140D0532A2BB2CE008268FB /* Trumpet.mp3 */,
+				DF9F6FF02AE9BE3200E5B60D /* Corporate.mp3 */,
+				DF9F6FEF2AE9BE3200E5B60D /* Jingle.mp3 */,
 				81554DCA2A746C7100D75B23 /* ReggaeOne-Regular.ttf */,
 			);
 			path = "Fonts and Audio";
@@ -99,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				8140D0452A26B728008268FB /* ContentView.swift */,
+				DF9F6FE12AE9AB7D00E5B60D /* SettingsView.swift */,
 				81554DD12A746E1D00D75B23 /* SplashView.swift */,
 				81FE64F92A2E4F8A00FF54F6 /* EggCookingView.swift */,
 			);
@@ -109,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				81554DD42A748DEA00D75B23 /* EggView.swift */,
+				DF9F6FE32AE9ABF600E5B60D /* Backgrounds.swift */,
 				81554DD62A748F6A00D75B23 /* CustomFont-Modifier.swift */,
 			);
 			path = Components;
@@ -117,6 +131,7 @@
 		81554DCF2A746CA800D75B23 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				DF9F6FDF2AE9A4F100E5B60D /* TimeManager.swift */,
 				8140D0552A2BB2E9008268FB /* AudioManager.swift */,
 			);
 			path = Controllers;
@@ -181,10 +196,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF9F6FF22AE9BE3200E5B60D /* Corporate.mp3 in Resources */,
 				8140D04B2A26B729008268FB /* Preview Assets.xcassets in Resources */,
 				81554DCB2A746C7100D75B23 /* ReggaeOne-Regular.ttf in Resources */,
-				8140D0542A2BB2CE008268FB /* successTrumpet.mp3 in Resources */,
+				8140D0542A2BB2CE008268FB /* Trumpet.mp3 in Resources */,
 				8140D0482A26B729008268FB /* Assets.xcassets in Resources */,
+				DF9F6FF12AE9BE3200E5B60D /* Jingle.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,10 +237,13 @@
 				8140D0462A26B728008268FB /* ContentView.swift in Sources */,
 				8140D0442A26B728008268FB /* EggTimerApp.swift in Sources */,
 				8140D0562A2BB2E9008268FB /* AudioManager.swift in Sources */,
+				DF9F6FE22AE9AB7D00E5B60D /* SettingsView.swift in Sources */,
 				81554DD52A748DEA00D75B23 /* EggView.swift in Sources */,
 				81FE64FA2A2E4F8A00FF54F6 /* EggCookingView.swift in Sources */,
 				81554DD22A746E1D00D75B23 /* SplashView.swift in Sources */,
+				DF9F6FE02AE9A4F100E5B60D /* TimeManager.swift in Sources */,
 				81554DD72A748F6A00D75B23 /* CustomFont-Modifier.swift in Sources */,
+				DF9F6FE42AE9ABF600E5B60D /* Backgrounds.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +381,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -391,6 +412,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
