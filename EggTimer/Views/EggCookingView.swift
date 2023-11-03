@@ -8,6 +8,7 @@
 // TODO: Make an extension on file manager https://www.hackingwithswift.com/books/ios-swiftui/writing-data-to-the-documents-directory
 // TODO: Well firstly if you go back and forth the progressView is not updating
 // TODO: Make the progress view count down instead of count up, maybe that will fix the issue?
+// https://developer.apple.com/documentation/swiftui/progressview
 import SwiftData
 import SwiftUI
 
