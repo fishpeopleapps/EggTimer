@@ -4,8 +4,9 @@
 //
 //  Created by KBrewer on 5/30/23.
 //
-
+// TODO: Add a phone widget
 import SwiftUI
+import SwiftData
 
 @main
 struct EggTimerApp: App {

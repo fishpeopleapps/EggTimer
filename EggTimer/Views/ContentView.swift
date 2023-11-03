@@ -5,6 +5,7 @@
 //  Created by KBrewer on 5/30/23.
 //
 // TODO: Error: ProgressView initialized with an out-of-bounds progress value. The value will be clamped to the range of `0...total`.
+// TODO: Reinstall swiftlint
 import AVKit
 import SwiftUI
 
@@ -41,7 +42,7 @@ struct ContentView: View {
                 }
             }
             .sheet(isPresented: $isShowingSettings) {
-                SettingsView(audioManager: AudioManager())
+                SettingsView(audioManager: _audioManager)
                     .presentationDetents([.medium])
             }
             .toolbar {

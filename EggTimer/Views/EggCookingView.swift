@@ -5,10 +5,10 @@
 //  Created by KBrewer on 6/5/23.
 //
 // TODO: Move timeRemaining and totalTime to TimeManager
-// TODO: Now that I updated it the audio is not saving, it's working in the settings, but when it gets to the
-// countdown it plays the default
-// maybe persisting the data will fix this problem?
-
+// TODO: Make an extension on file manager https://www.hackingwithswift.com/books/ios-swiftui/writing-data-to-the-documents-directory
+// TODO: Well firstly if you go back and forth the progressView is not updating
+// TODO: Make the progress view count down instead of count up, maybe that will fix the issue?
+import SwiftData
 import SwiftUI
 
 /// View that holds a single egg, its associated time, and a countdown timer

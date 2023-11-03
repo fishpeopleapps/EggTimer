@@ -7,7 +7,8 @@
 
 import SwiftUI
 
-@Observable class TimeManager {
+@Observable 
+class TimeManager {
     var secondsPassed = 0.0
     let timer = Timer
         .publish(every: 1, on: .main, in: .common)
